@@ -1,36 +1,46 @@
-import { Component } from '@angular/core';
-import { Todo } from './todo';
-import { TodoDataService } from './todo-data.service';
+import { Component, OnInit } from '@angular/core';
+// import { Todo } from './todo';
+// import { TodoDataService } from './todo-data.service';
+import { Dealer } from './dealer.model';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ TodoDataService ]
+  providers: [ DataService ]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
 
-  newTodo: Todo = new Todo();
+  dealers$: Dealer[];
+  // newTodo: Todo = new Todo();
 
-  constructor(private todoDataService: TodoDataService) {
+  constructor(private dataService: DataService) {
+  }
+  
+  ngOnInit() {
+    return this.dataService.getDealers()
+    .subscribe(data => this.dealers$ = data)
   }
 
-  addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
-  }
 
-  toggleTodoComplete(todo) {
-    this.todoDataService.toggleTodoComplete(todo);
-  }
 
-  removeTodo(todo) {
-    this.todoDataService.deleteTodoById(todo.id);
-  }
+  // addTodo() {
+  //   this.todoDataService.addTodo(this.newTodo);
+  //   this.newTodo = new Todo();
+  // }
 
-  get todos() {
-    return this.todoDataService.getAllTodos();
-  }
+  // toggleTodoComplete(todo) {
+  //   this.todoDataService.toggleTodoComplete(todo);
+  // }
+
+  // removeTodo(todo) {
+  //   this.todoDataService.deleteTodoById(todo.id);
+  // }
+
+  // get todos() {
+  //   return this.todoDataService.getAllTodos();
+  // }
 
 }
