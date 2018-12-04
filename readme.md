@@ -1,6 +1,6 @@
 # Coding challenge
 
-By Thomas Kim (mailto:foo@bar.com)
+By Thomas Kim foo@bar.com
 Requested by Sebastian Vogel
 
 ## Installation instructions
@@ -17,7 +17,7 @@ Requested by Sebastian Vogel
 ## Time management
 
     10:00 - Receive requirements, review requirements, query any ambiguity
-    10:30 - Plan and choose frameworks/libraries/technology
+    10:25 - Plan and choose frameworks/libraries/technology
     10:45 - Brainstorm test plan, draft technical design 
     11:10 - Setup chosen frameworks/libraries/technology
     11:55 - Build requirements to specification
