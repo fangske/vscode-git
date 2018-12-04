@@ -8,6 +8,7 @@ import { TodoDataService } from './todo-data.service';
   styleUrls: ['./app.component.css'],
   providers: [ TodoDataService ]
 })
+
 export class AppComponent {
 
   newTodo: Todo = new Todo();

@@ -30,6 +30,8 @@ Requested by Sebastian Vogel
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
+Centralised the business logic within the dataservice
+
 ## Testing methodology
 
 Another update
