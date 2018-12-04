@@ -1,6 +1,6 @@
 # Coding challenge
 
-By Thomas Kim (mailto:tkimm@me.com)
+By Thomas Kim (mailto:foo@bar.com)
 
 ## Technologies Used 
 
