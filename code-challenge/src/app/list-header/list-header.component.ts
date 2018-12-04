@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Todo } from '../todo';
 
 @Component({
   selector: 'app-list-header',
   templateUrl: './list-header.component.html',
   styleUrls: ['./list-header.component.css']
 })
-export class ListHeaderComponent implements OnInit {
+export class ListHeaderComponent {
 
-  constructor() { }
+  newTodo: Todo = new Todo();
 
-  ngOnInit() {
+  @Output()
+  add: EventEmitter<Todo> = new EventEmitter();
+
+  constructor() {
+  }
+
+  addTodo() {
+    this.add.emit(this.newTodo);
+    this.newTodo = new Todo();
   }
 
 }
