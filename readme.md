@@ -1,3 +1,4 @@
 # foo
 
-what it do?
+This is a placeholder for the readme
+
