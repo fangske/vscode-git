@@ -26,7 +26,7 @@ Requested by Sebastian Vogel
 
 ## Links to further reading of chosen technology
 
-More [link] 
+More [link](http://www.google.com) 
 
 ## Testing methodology
 
