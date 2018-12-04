@@ -1,12 +1,12 @@
 {
   "db": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "daimler-getone",
-    "password": "",
     "name": "db",
-    "user": "",
-    "connector": "mongodb"
+    "connector": "memory"
+  },
+  "daimler-getone": {
+    "name": "daimler-getone",
+    "baseURL": "https://jsonplaceholder.typicode.com/users",
+    "crud": true,
+    "connector": "rest"
   }
 }
