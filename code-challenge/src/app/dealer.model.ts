@@ -1,5 +1,5 @@
 export class Dealer {
     dealerId: number;
     legalName: string;
-    address: object;
+    // address: object;
 }

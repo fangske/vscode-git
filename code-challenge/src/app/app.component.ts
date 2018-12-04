@@ -21,10 +21,9 @@ export class AppComponent implements OnInit{
   
   ngOnInit() {
     return this.dataService.getDealers()
-    .subscribe(data => this.dealers$ = data)
+    .subscribe(data => this.dealers$ = data,
+      error => console.log(error))
   }
-
-
 
   // addTodo() {
   //   this.todoDataService.addTodo(this.newTodo);
