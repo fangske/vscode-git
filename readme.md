@@ -26,9 +26,9 @@ Requested by Sebastian Vogel
 
 ## Links to further reading of chosen technology
 
-[Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
-[Angular](http://www.angular.io) 
-[Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+[Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript)<br />
+[Angular](http://www.angular.io)<br />
+[Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
 ## Testing methodology
 
