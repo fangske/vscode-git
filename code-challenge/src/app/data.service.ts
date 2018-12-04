@@ -7,7 +7,8 @@ import { Dealer } from './dealer.model';
 })
 export class DataService {
 
-  apiUrl = 'https://api.mercedes-benz.com/dealer/v1/dealers?city=Stuttgart&brand=SMT&fields=dealers(dealerId,legalName,address)&apikey=622f14f4-c06c-41aa-b975-45f2970244e1';
+  apiUrl = 'https://jsonplaceholder.typicode.com/users' 
+  //'https://api.mercedes-benz.com/dealer/v1/dealers?pageSize=2&city=Stuttgart&brand=SMT&fields=dealers(dealerId,legalName,address)&apikey=622f14f4-c06c-41aa-b975-45f2970244e1';
 
   constructor(private _http: HttpClient) { }
 

@@ -23,8 +23,8 @@ export class AppComponent implements OnInit{
     return this.dataService.getDealers()
     .subscribe(data => this.dealers$ = data,
       error => console.log(error))
-  }
-
+    }
+    
   // addTodo() {
   //   this.todoDataService.addTodo(this.newTodo);
   //   this.newTodo = new Todo();
