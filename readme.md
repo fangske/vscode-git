@@ -1,6 +1,6 @@
 # Coding challenge
 
-By Thomas Kim foo@bar.com
+By Thomas Kim foo@bar.com<br />
 Requested by Sebastian Vogel
 
 ## Installation instructions
