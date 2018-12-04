@@ -28,7 +28,6 @@ Requested by Sebastian Vogel
 
 [Loopback](https://loopback.io)<br />
 [Express] TBC - may be dropped
-[Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript)<br />
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
