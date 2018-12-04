@@ -1,8 +1,8 @@
-# foo
+# Coding challenge
 
-This is a placeholder for the README file 
+By Thomas Kim (mailto:tkimm@me.com)
 
-## bar 
+## Technologies Used 
 
 More [link] 
 
@@ -11,4 +11,3 @@ More [link]
 Another update
 
 ## Technical requirements
-
