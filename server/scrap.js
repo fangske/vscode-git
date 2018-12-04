@@ -1,14 +1,3 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const PORT = 3000
-const app = express();
-
-app.use(bodyParser.json());
-app.use(cors());
-
-// Dummy data hardcoded
-
 const myObj = {
     "dealers": [
         {
@@ -31,20 +20,30 @@ const myObj = {
                 "district": "Bad Cannstatt",
                 "countryIsoCode": "DE"
             }
+        },
+        {
+            "dealerId": "GS0000899",
+            "legalName": "Daimler AG",
+            "address": {
+                "street": "Trnkestrae 18",
+                "zipCode": "70597",
+                "city": "Stuttgart",
+                "countryIsoCode": "DE"
+            }
+        },
+        {
+            "dealerId": "GS0017470",
+            "legalName": "Felix Kloz GmbH",
+            "address": {
+                "street": "Burgstallstrae 95",
+                "zipCode": "70199",
+                "city": "Stuttgart",
+                "countryIsoCode": "DE"
+            }
         }
     ]
 }
 
+const dealers = Object.values(myObj)
 
-app.get('/', function(req, res){
-    res.send('hello from server');
-})
-
-app.post('/add', function(req, res){
-    console.log(req.body);
-    res.status(200).send({'message' : 'Data Received'})
-})
-
-app.listen(PORT, function(){
-    console.log('Server running on localhost:' + PORT);
-});
+console.log(dealers)
