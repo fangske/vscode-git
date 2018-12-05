@@ -1,6 +1,6 @@
 {
   "name": "vehicle-models",
-  "plural": "common",
+  "plural": "",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

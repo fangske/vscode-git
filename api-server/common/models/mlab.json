@@ -1,0 +1,26 @@
+{
+  "name": "mlab",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "name": {
+        "type": "string"
+      },
+      "foo": {
+        "type": "string"
+      },
+      "bar": {
+        "type": "string"
+      },
+      "hello": {
+        "type": "string"
+      }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

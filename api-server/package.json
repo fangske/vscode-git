@@ -8,9 +8,12 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "build:sdk": "./node_modules/.bin/lb-sdk server/server client/front/src/app/shared/sdk -d ng2web -i disabled"
   },
   "dependencies": {
+    "@angular/http": "^7.1.1",
+    "@mean-expert/loopback-sdk-builder": "^2.3.1",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.10.0",

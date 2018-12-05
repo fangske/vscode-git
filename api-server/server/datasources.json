@@ -1,12 +1,38 @@
 {
   "db": {
+    "host": "localhost",
+    "url": "mongodb://admin:admin123@ds125574.mlab.com:25574/mongo-testdb",
+    "database": "mongo-testdb",
     "name": "db",
-    "connector": "memory"
+    "connector": "mongodb"
   },
-  "daimler-getone": {
-    "name": "daimler-getone",
-    "baseURL": "https://jsonplaceholder.typicode.com/users",
-    "crud": true,
-    "connector": "rest"
+  "geoRest": {
+    "name": "geoRest",
+    "connector": "rest",
+    "debug": "false",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://maps.googleapis.com/maps/api/geocode/{format=json}",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "query": {
+            "address": "{street},{city},{zipcode}",
+            "sensor": "{sensor=false}"
+          },
+          "responsePath": "$.results[0].geometry.location"
+        },
+        "functions": {
+          "geocode": [
+            "street",
+            "city",
+            "zipcode"
+          ]
+        }
+      }
+    ]
   }
 }

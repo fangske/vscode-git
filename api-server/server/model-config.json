@@ -38,5 +38,13 @@
   "vehicle-models": {
     "dataSource": "db",
     "public": true
+  },
+  "rest": {
+    "dataSource": "geoRest",
+    "public": true
+  },
+  "mlab": {
+    "dataSource": "db",
+    "public": true
   }
 }
