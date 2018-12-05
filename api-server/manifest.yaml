@@ -1,0 +1,4 @@
+applications:
+  name: daimler-getone-api
+  memory: 256M
+
