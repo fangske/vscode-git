@@ -8,11 +8,9 @@ Requested by S Vogel
 
 ## Technical requirements
 
-    1. 
-    2.
-    3.
-    4.
-    5.
+    1. Shortening: Take a URL and return a much shorter URL.
+    2. Redirection: Take a short URL and redirect to the original URL.
+    3. Custom URL: Allow the users to pick custom shortened URL.
 
 ## Time management
 
@@ -26,7 +24,7 @@ Requested by S Vogel
 
 ## Links to further reading of chosen technology
 
-[Loopback](https://loopback.io)  <br />
+[Loopback](https://loopback.io) <br />
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
@@ -34,8 +32,12 @@ Centralised the business logic within the dataservice
 
 ## Testing methodology
 
-
+Incomplete 
 
 ## Recognised shortcomings
 
+Authorisatoin, injection vulnerability, loss of some modularity and not fit for purpose frameworks
+
 ## Recommendations for improvement
+
+- Don't try to use new frameworks and platforms (loopback/ibm cloud)
