@@ -45,7 +45,6 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CookieBrowser } from './storage/cookie.browser';
 import { StorageBrowser } from './storage/storage.browser';
 import { UserApi } from './services/custom/User';
-import { Vehicle-modelsApi } from './services/custom/Vehicle-models';
 import { RestApi } from './services/custom/Rest';
 import { MlabApi } from './services/custom/Mlab';
 /**
@@ -77,7 +76,6 @@ export class SDKBrowserModule {
         LoggerService,
         SDKModels,
         UserApi,
-        Vehicle-modelsApi,
         RestApi,
         MlabApi,
         internalStorageProvider,

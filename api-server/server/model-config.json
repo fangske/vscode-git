@@ -35,10 +35,6 @@
     "dataSource": "db",
     "public": false
   },
-  "vehicle-models": {
-    "dataSource": "db",
-    "public": true
-  },
   "rest": {
     "dataSource": "geoRest",
     "public": true

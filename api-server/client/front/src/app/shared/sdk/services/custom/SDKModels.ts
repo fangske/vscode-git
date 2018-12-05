@@ -1,7 +1,6 @@
 /* tslint:disable */
 import { Injectable } from '@angular/core';
 import { User } from '../../models/User';
-import { Vehicle-models } from '../../models/Vehicle-models';
 import { Rest } from '../../models/Rest';
 import { Mlab } from '../../models/Mlab';
 
@@ -12,7 +11,6 @@ export class SDKModels {
 
   private models: Models = {
     User: User,
-    Vehicle-models: Vehicle-models,
     Rest: Rest,
     Mlab: Mlab,
     
