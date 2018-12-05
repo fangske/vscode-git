@@ -2,17 +2,25 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Url } from './url.model';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DataService {
-
-  apiKey = 'DpgOLGAPLO8DAASk3e2SxvtWNWRZd3lXWX8GbWbaFuPlHC5BFpUoFAOLhZmRR41e'
-  apiUrl = 'https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs?access_token=' + this.apiKey 
-
-  constructor(private _http: HttpClient) { }
+  constructor(private http: HttpClient) { }
+  baseUrl: string = 'http://localhost:8080/user-portal/users';
 
   getUrl() {
-    return this._http.get<Url[]>(this.apiUrl);
+    return this.http.get<Url[]>(this.baseUrl);
   }
+
+  getUrlById(id: number) {
+    return this.http.get<Url>(this.baseUrl + '/' + id);
+  }
+
+  hashURL(url: Url) {
+    return this.http.post(this.baseUrl, url);
+  }
+
+  rediectURL(user: Url) {
+    return this.http.put(this.baseUrl + '/' + user.id, user);
+  }
+
 }
