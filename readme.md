@@ -8,7 +8,7 @@ Requested by S Vogel
 
 ## Technical requirements
 
-    1. You will develop a backend application that provides a Restful API and a frontend application that consumes the Restful API and provides a UI.
+    1. 
     2.
     3.
     4.
@@ -26,8 +26,7 @@ Requested by S Vogel
 
 ## Links to further reading of chosen technology
 
-[Loopback](https://loopback.io)<br />
-[Express] TBC - may be dropped
+[Express] 
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
