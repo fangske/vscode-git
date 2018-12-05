@@ -5,22 +5,10 @@ import { Url } from './url.model';
 @Injectable()
 export class DataService {
   constructor(private http: HttpClient) { }
-  baseUrl: string = 'http://localhost:8080/user-portal/users';
+  baseUrl: string = 'https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs';
 
   getUrl() {
-    return this.http.get<Url[]>(this.baseUrl);
-  }
-
-  getUrlById(id: number) {
-    return this.http.get<Url>(this.baseUrl + '/' + id);
-  }
-
-  hashURL(url: Url) {
-    return this.http.post(this.baseUrl, url);
-  }
-
-  rediectURL(user: Url) {
-    return this.http.put(this.baseUrl + '/' + user.id, user);
+   return this.http.get<Url[]>(this.baseUrl);
   }
 
 }

@@ -1,32 +1,22 @@
-<div class="container">
-  <h1>URL shortener</h1>
-  <form>
-    <div class="form-group">
-      <label for="name">Name - {{ Url.url }}</label>
-      <input type="text" class="form-control" id="name" required>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form #registerForm="ngForm">
+          <h1>URL Shortener</h1>
+          <div class="form-group">
+            <input name="url" ngModel #url="ngModel" type="text" class="">
+          </div>
+          <button type="submit" class="btn btn-success" (click)="onSubmit(registerForm)">Submit</button>
+        </form>
+        <!-- <form #registerForm="ngForm">
+            <h1>Reverse Hash Url</h1>
+            <div class="form-group">
+              <input name="url" ngModel #url="ngModel" type="text" class="f">
+            </div>
+            <button type="submit" class="btn btn-success" (click)="onSubmit2(registerForm)">Submit</button>
+          </form>  -->
+      </div>
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-</div>
-
-<div class="container">
-  <h1>URL redirect</h1>
-  <form>
-    <div class="form-group">
-      <label for="name">Name - {{ Url.url }}</label>
-      <input type="text" class="form-control" id="name" required>
-    </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-</div>
-
-<div class="container">
-  <h1>Custom URL shortener</h1>
-  <form>
-    <div class="form-group">
-      <label for="name">Name - {{ Url.url }}</label>
-      <input type="text" class="form-control" id="name" required>
-    </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-      </form>
+  </div>
 </div>
