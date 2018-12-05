@@ -5,7 +5,11 @@ Requested by S Vogel
 
 ## Installation instructions
 
-Incomplete task - Navigate to 
+Incompleted task -
+
+Backend - api-server, live version running at - https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs
+
+Frontend - clone code-challenge and run 'ng serve'
 
 ## Technical requirements
 
@@ -29,16 +33,16 @@ Incomplete task - Navigate to
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
-Centralised the business logic within the dataservice - external api can be found at https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs
+Centralised the business logic within the dataservice 
 
 ## Testing methodology
 
-Incomplete 
+Incomplete see below
 
 ## Recognised shortcomings
 
-Auth disabled/hardcoded pw's, injection vulnerability, incomplete testing, incomplete technical specification, not enough exposure to external platforms causing loss of time.
+Auth disabled/hardcoded pw's, injection vulnerability, incomplete testing, incomplete technical specification, not enough exposure to external platforms causing loss of time, bad time management
 
 ## Recommendations for improvement
 
-Don't try to use new frameworks and platforms (loopback/ibm cloud)
+Don't try to learn new frameworks/platforms in a challenge (loopback/ibm cloud)
