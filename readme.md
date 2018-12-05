@@ -5,6 +5,7 @@ Requested by S Vogel
 
 ## Installation instructions
 
+Incomplete task - Navigate to 
 
 ## Technical requirements
 
@@ -36,8 +37,8 @@ Incomplete
 
 ## Recognised shortcomings
 
-Authorisatoin, injection vulnerability, loss of some modularity and not fit for purpose frameworks
+Auth disabled/hardcoded string, injection vulnerability, incomplete testing, incomplete technical specification, not enough exposure to external platforms causing loss of time.
 
 ## Recommendations for improvement
 
-- Don't try to use new frameworks and platforms (loopback/ibm cloud)
+Don't try to use new frameworks and platforms (loopback/ibm cloud)
