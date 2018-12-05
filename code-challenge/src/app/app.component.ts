@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Todo } from './todo';
-// import { TodoDataService } from './todo-data.service';
-import { Dealer } from './dealer.model';
+import { Url } from './url.model';
 import { DataService } from './data.service';
 
 @Component({
@@ -13,33 +11,15 @@ import { DataService } from './data.service';
 
 export class AppComponent implements OnInit{
 
-  dealers$: Dealer[];
-  // newTodo: Todo = new Todo();
+  url$: Url[];
 
   constructor(private dataService: DataService) {
   }
   
   ngOnInit() {
-    return this.dataService.getDealers()
-    .subscribe(data => this.dealers$ = data,
+    return this.dataService.getUrl()
+    .subscribe(data => this.url$ = data,
       error => console.log(error))
     }
     
-  // addTodo() {
-  //   this.todoDataService.addTodo(this.newTodo);
-  //   this.newTodo = new Todo();
-  // }
-
-  // toggleTodoComplete(todo) {
-  //   this.todoDataService.toggleTodoComplete(todo);
-  // }
-
-  // removeTodo(todo) {
-  //   this.todoDataService.deleteTodoById(todo.id);
-  // }
-
-  // get todos() {
-  //   return this.todoDataService.getAllTodos();
-  // }
-
 }

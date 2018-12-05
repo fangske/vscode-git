@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Url } from './dealer.model';
+import { Url } from './url.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class DataService {
 
   constructor(private _http: HttpClient) { }
 
-  getDealers() {
-    return this._http.get<Dealer[]>(this.apiUrl);
+  getUrl() {
+    return this._http.get<Url[]>(this.apiUrl);
   }
 }
