@@ -5,11 +5,11 @@ Requested by S Vogel
 
 ## Installation instructions
 
-Incompleted task -
+Incomplete tasks -
 
 Backend - api-server, live version running at - https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs
 
-Frontend - clone code-challenge and run 'ng serve'
+Frontend - clone code-challenge and run 'ng serve' or https://fangske.github.io/vscode-git/
 
 ## Technical requirements
 
