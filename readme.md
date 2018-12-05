@@ -29,7 +29,7 @@ Incomplete task - Navigate to
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
-Centralised the business logic within the dataservice
+Centralised the business logic within the dataservice - external api can be found at https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs
 
 ## Testing methodology
 
@@ -37,7 +37,7 @@ Incomplete
 
 ## Recognised shortcomings
 
-Auth disabled/hardcoded string, injection vulnerability, incomplete testing, incomplete technical specification, not enough exposure to external platforms causing loss of time.
+Auth disabled/hardcoded pw's, injection vulnerability, incomplete testing, incomplete technical specification, not enough exposure to external platforms causing loss of time.
 
 ## Recommendations for improvement
 
