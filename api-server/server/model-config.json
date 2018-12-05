@@ -31,14 +31,6 @@
       "strictObjectIDCoercion": true
     }
   },
-  "Role": {
-    "dataSource": "db",
-    "public": false
-  },
-  "rest": {
-    "dataSource": "geoRest",
-    "public": true
-  },
   "mlab": {
     "dataSource": "db",
     "public": true
