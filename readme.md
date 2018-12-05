@@ -1,7 +1,7 @@
 # Coding challenge
 
 By Thomas Kim foo@bar.com<br />
-Requested by Sebastian Vogel
+Requested by S Vogel
 
 ## Installation instructions
 
