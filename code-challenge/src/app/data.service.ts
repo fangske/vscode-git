@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Dealer } from './dealer.model';
+import { Url } from './dealer.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  apiUrl = 'http://localhost:3000/api/mlabs/' 
+  apiKey = 'DpgOLGAPLO8DAASk3e2SxvtWNWRZd3lXWX8GbWbaFuPlHC5BFpUoFAOLhZmRR41e'
+  apiUrl = 'https://damiler-getone-api.eu-gb.mybluemix.net/api/mlabs?access_token=' + this.apiKey 
 
   constructor(private _http: HttpClient) { }
 

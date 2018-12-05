@@ -1,7 +1,6 @@
-export class Dealer {
+export class Url {
+    url: string;
+    hashed_url: string;
+    url_ind: string;
     id: string;
-    name: string;
-    foo: string;
-    bar: string;
-    hello: string;
 }
