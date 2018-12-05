@@ -1,5 +1,5 @@
 import { Component }             from '@angular/core';
-//import { BASE_URL, API_VERSION } from './shared'; 
+import { BASE_URL, API_VERSION } from './shared/base.url'; 
 import { LoopBackConfig }        from './shared/sdk';
 import { Account, AccessToken }  from './shared/sdk/models';
 import { AccountApi }            from './shared/sdk/services';
@@ -9,13 +9,25 @@ import { AccountApi }            from './shared/sdk/services';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 
-    constructor() {
-      LoopBackConfig.setBaseURL('http://127.0.0.1:3000');
-      LoopBackConfig.setApiVersion('api');
-    }
+  // Create model instances and set the right type effortless
+  private account: Account = new Account();
+  
+  // Configure LoopBack Once or Individually by Component
+  constructor(private accountApi: AccountApi) {
+      LoopBackConfig.setBaseURL(BASE_URL);
+      LoopBackConfig.setApiVersion(API_VERSION);
+  }
+  
+  // Start making API calls right away
+  private signup(): void {
+      this.accountApi.create(this.account).subscribe((account: Account) => this.signin());
   }
 
-  title = 'front';
+  // Built-in LoopBack Authentication and Typings like Account and TokenInterface
+  private signin(): void {
+      this.accountApi.login(this.account).subscribe((token: AccessToken) => alert('Fake Redirect'));
+  }
 }

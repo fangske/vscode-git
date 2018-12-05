@@ -7,7 +7,7 @@ import { Dealer } from './dealer.model';
 })
 export class DataService {
 
-  apiUrl = 'http://localhost:3000' 
+  apiUrl = 'http://localhost:3000/api/mlabs/' 
 
   constructor(private _http: HttpClient) { }
 

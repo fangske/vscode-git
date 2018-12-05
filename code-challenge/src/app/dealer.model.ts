@@ -1,7 +1,7 @@
 export class Dealer {
-    // dealerId: number;
-    // legalName: string;
-    // address: object;
-    Id: string;
+    id: string;
     name: string;
+    foo: string;
+    bar: string;
+    hello: string;
 }
