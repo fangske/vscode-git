@@ -26,7 +26,7 @@ Requested by S Vogel
 
 ## Links to further reading of chosen technology
 
-[Express] 
+[Loopback]  <br />
 [Angular](http://www.angular.io)<br />
 [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br />
 
